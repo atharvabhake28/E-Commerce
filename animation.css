@@ -1,0 +1,210 @@
+/* Plant Animation CSS */
+
+/* Base Animation Classes */
+.animate {
+    transition: all 0.5s ease;
+  }
+  
+  /* Gentle Sway Animation */
+  @keyframes gentleSway {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(1deg);
+    }
+    50% {
+      transform: rotate(0deg);
+    }
+    75% {
+      transform: rotate(-1deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  .plant-sway {
+    transform-origin: bottom center;
+    animation: gentleSway 5s ease-in-out infinite;
+  }
+  
+  /* Slow Growth Animation */
+  @keyframes slowGrow {
+    0% {
+      transform: scale(0.98);
+    }
+    50% {
+      transform: scale(1.02);
+    }
+    100% {
+      transform: scale(0.98);
+    }
+  }
+  
+  .plant-grow {
+    animation: slowGrow 8s ease-in-out infinite;
+  }
+  
+  /* Leaf Rustle Animation */
+  @keyframes leafRustle {
+    0% {
+      transform: translateX(0) translateY(0);
+    }
+    25% {
+      transform: translateX(2px) translateY(-1px);
+    }
+    50% {
+      transform: translateX(0) translateY(0);
+    }
+    75% {
+      transform: translateX(-2px) translateY(1px);
+    }
+    100% {
+      transform: translateX(0) translateY(0);
+    }
+  }
+  
+  .plant-rustle {
+    animation: leafRustle 6s ease-in-out infinite;
+  }
+  
+  /* Hover Effects */
+  .plant-hover {
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  
+  .plant-hover:hover {
+    transform: scale(1.05);
+    filter: brightness(1.05);
+  }
+  
+  /* Fade In Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .plant-fade-in {
+    animation: fadeIn 1s ease-out forwards;
+  }
+  
+  /* Bloom Animation */
+  @keyframes bloom {
+    0% {
+      transform: scale(0.9);
+      opacity: 0.8;
+    }
+    80% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  .plant-bloom {
+    animation: bloom 2s ease-out;
+  }
+  
+  /* Specific Plant Type Animations */
+  .trailing-plant {
+    transform-origin: top center;
+    animation: gentleSway 7s ease-in-out infinite;
+  }
+  
+  .tall-plant {
+    transform-origin: bottom center;
+    animation: gentleSway 9s ease-in-out infinite;
+  }
+  
+  .succulent {
+    animation: slowGrow 10s ease-in-out infinite;
+  }
+  
+  /* Animation Delays for Variety */
+  .delay-1 {
+    animation-delay: 0.5s;
+  }
+  
+  .delay-2 {
+    animation-delay: 1s;
+  }
+  
+  .delay-3 {
+    animation-delay: 1.5s;
+  }
+  
+  .delay-4 {
+    animation-delay: 2s;
+  }
+  
+  /* Product Card Animation */
+  .product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-card:hover .card-img-top {
+    animation: slowGrow 4s ease-in-out infinite;
+  }
+  
+  /* Hero Section Plant Animation */
+  .hero-plant {
+    animation: fadeIn 1.5s ease-out forwards, gentleSway 8s ease-in-out infinite 1.5s;
+  }
+  
+  /* Category Card Animation */
+  .category-card img {
+    transition: transform 0.5s ease;
+  }
+  
+  .category-card:hover img {
+    transform: scale(1.08);
+  }
+  
+  /* Featured Plant Animation */
+  .featured-plant {
+    animation: bloom 2s ease-out;
+  }
+  
+  /* Product Detail Main Image Animation */
+  .main-image img {
+    transition: transform 0.5s ease;
+  }
+  
+  .main-image:hover img {
+    transform: scale(1.05);
+  }
+  
+  /* Thumbnail Animation */
+  .thumbnail {
+    transition: transform 0.3s ease, opacity 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .thumbnail:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Animation for plant benefits icons */
+  .benefit-icon i {
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .benefit-icon:hover i {
+    transform: scale(1.2);
+    color: #1b5e20;
+  }
+  
+  

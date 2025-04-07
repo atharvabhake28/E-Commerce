@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlantHaven - Pothos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="animation.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="text-success fw-bold">Plant</span>Haven
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <div class="d-flex ms-3">
+                    <a href="#" class="btn btn-outline-success me-2">
+                        <i class="bi bi-search"></i>
+                    </a>
+                    <a href="#" class="btn btn-outline-success position-relative">
+                        <i class="bi bi-cart"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">
+                            3
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="bg-light py-2">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="products.html">Products</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Pothos</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Product Detail Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Product Images -->
+                <div class="col-md-6 mb-4">
+                    <div class="product-images">
+                        <div class="main-image mb-3">
+                            <img src="Photo\Photo copy\Pothos.jpg" alt="Pothos" class="img-fluid rounded trailing-plant">
+                        </div>
+                        <div class="row g-2">
+                            <div class="col-3">
+                                <img src="Photo\Photo copy\Pothos.jpg" alt="Pothos thumbnail" class="img-fluid rounded thumbnail active">
+                            </div>
+                            <div class="col-3">
+                                <img src="Photo\Photo copy\Pothos.jpg" alt="Pothos thumbnail" class="img-fluid rounded thumbnail">
+                            </div>
+                            <div class="col-3">
+                                <img src="Photo\Photo copy\Pothos.jpg" alt="Pothos thumbnail" class="img-fluid rounded thumbnail">
+                            </div>
+                            <div class="col-3">
+                                <img src="Photo\Photo copy\Pothos.jpg" alt="Pothos thumbnail" class="img-fluid rounded thumbnail">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product Info -->
+                <div class="col-md-6">
+                    <h1 class="mb-2">Pothos (Epipremnum aureum)</h1>
+                    <div class="mb-3">
+                        <div class="d-flex align-items-center">
+                            <div class="ratings me-2">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                            </div>
+                            <span>(52 reviews)</span>
+                        </div>
+                    </div>
+                    <h2 class="text-success mb-4">$19.99</h2>
+                    
+                    <p class="mb-4">The Pothos, also known as Devil's Ivy, is one of the easiest houseplants to grow. With its trailing vines and heart-shaped leaves, it's perfect for hanging baskets, shelves, or training to climb up a support.</p>
+                    
+                    <div class="mb-4">
+                        <h5>Size</h5>
+                        <div class="btn-group" role="group">
+                            <input type="radio" class="btn-check" name="size" id="small" autocomplete="off">
+                            <label class="btn btn-outline-success" for="small">Small</label>
+                            
+                            <input type="radio" class="btn-check" name="size" id="medium" autocomplete="off" checked>
+                            <label class="btn btn-outline-success" for="medium">Medium</label>
+                            
+                            <input type="radio" class="btn-check" name="size" id="large" autocomplete="off">
+                            <label class="btn btn-outline-success" for="large">Large</label>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h5>Pot Style</h5>
+                        <div class="btn-group" role="group">
+                            <input type="radio" class="btn-check" name="pot" id="terracotta" autocomplete="off">
+                            <label class="btn btn-outline-success" for="terracotta">Terracotta</label>
+                            
+                            <input type="radio" class="btn-check" name="pot" id="ceramic" autocomplete="off">
+                            <label class="btn btn-outline-success" for="ceramic">Ceramic</label>
+                            
+                            <input type="radio" class="btn-check" name="pot" id="hanging" autocomplete="off" checked>
+                            <label class="btn btn-outline-success" for="hanging">Hanging</label>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h5>Variety</h5>
+                        <div class="btn-group" role="group">
+                            <input type="radio" class="btn-check" name="variety" id="golden" autocomplete="off" checked>
+                            <label class="btn btn-outline-success" for="golden">Golden</label>
+                            
+                            <input type="radio" class="btn-check" name="variety" id="marble-queen" autocomplete="off">
+                            <label class="btn btn-outline-success" for="marble-queen">Marble Queen</label>
+                            
+                            <input type="radio" class="btn-check" name="variety" id="neon" autocomplete="off">
+                            <label class="btn btn-outline-success" for="neon">Neon</label>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="input-group me-3" style="width: 130px;">
+                            <button class="btn btn-outline-secondary" type="button">-</button>
+                            <input type="text" class="form-control text-center" value="1">
+                            <button class="btn btn-outline-secondary" type="button">+</button>
+                        </div>
+                        <button class="btn btn-success btn-lg flex-grow-1">Add to Cart</button>
+                    </div>
+                    
+                    <div class="d-flex mb-4">
+                        <button class="btn btn-outline-secondary me-2">
+                            <i class="bi bi-heart"></i> Add to Wishlist
+                        </button>
+                        <button class="btn btn-outline-secondary">
+                            <i class="bi bi-share"></i> Share
+                        </button>
+                    </div>
+                    
+                    <div class="product-meta">
+                        <p><strong>SKU:</strong> PLANT-PO-006</p>
+                        <p><strong>Categories:</strong> <a href="#">Indoor Plants</a>, <a href="#">Trailing Plants</a></p>
+                        <p><strong>Tags:</strong> <a href="#">Air Purifying</a>, <a href="#">Low Maintenance</a>, <a href="#">Beginner Friendly</a></p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product Details Tabs -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <ul class="nav nav-tabs" id="productTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="description-tab" data-bs-toggle="tab" data-bs-target="#description" type="button" role="tab" aria-controls="description" aria-selected="true">Description</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="care-tab" data-bs-toggle="tab" data-bs-target="#care" type="button" role="tab" aria-controls="care" aria-selected="false">Care Guide</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews" type="button" role="tab" aria-controls="reviews" aria-selected="false">Reviews (52)</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content p-4 border border-top-0 rounded-bottom" id="productTabsContent">
+                        <div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab">
+                            <h4>About Pothos</h4>
+                            <p>The Pothos (Epipremnum aureum), also known as Devil's Ivy, is a versatile and popular houseplant native to Southeast Asia. It features heart-shaped leaves that come in various shades of green, often with variegation patterns of white, yellow, or cream, depending on the variety.</p>
+                            <p>Pothos is known for its trailing vines that can grow several feet long, making it perfect for hanging baskets, shelves, or training to climb up a moss pole or trellis. In its natural habitat, it can grow up to 40 feet, with leaves reaching up to 30 inches in length.</p>
+                            <p>This plant has earned its nickname "Devil's Ivy" because it's nearly impossible to kill and stays green even when kept in the dark. It's one of the most adaptable houseplants available, thriving in a wide range of conditions.</p>
+                            <h5>Benefits:</h5>
+                            <ul>
+                                <li>Excellent air purifier, removing toxins like formaldehyde, benzene, and carbon monoxide</li>
+                                <li>Extremely adaptable to various light conditions, from low light to bright indirect light</li>
+                                <li>Drought-tolerant and forgiving if you forget to water</li>
+                                <li>Fast-growing, providing visible results and satisfaction</li>
+                                <li>Available in multiple varieties with different leaf patterns and colors</li>
+                                <li>Perfect for beginners or those who travel frequently</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="care" role="tabpanel" aria-labelledby="care-tab">
+                            <h4>Pothos Care Guide</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5><i class="bi bi-brightness-high"></i> Light</h5>
+                                    <p>Adaptable to various light conditions, from low light to bright indirect light. More variegated varieties need brighter light to maintain their patterns. Avoid direct sunlight which can scorch the leaves.</p>
+                                    
+                                    <h5><i class="bi bi-droplet"></i> Water</h5>
+                                    <p>Allow soil to dry out between waterings. Water when the top 1-2 inches of soil feel dry to the touch. Reduce watering in winter. Pothos is more tolerant of underwatering than overwatering.</p>
+                                    
+                                    <h5><i class="bi bi-thermometer-half"></i> Temperature</h5>
+                                    <p>Prefers temperatures between 65-85°F (18-29°C). Can tolerate temperatures as low as 55°F (13°C) but growth will slow. Keep away from cold drafts.</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5><i class="bi bi-moisture"></i> Humidity</h5>
+                                    <p>Tolerates normal household humidity levels. Higher humidity will encourage larger leaves and faster growth, but it's not necessary for the plant's survival.</p>
+                                    
+                                    <h5><i class="bi bi-flower1"></i> Fertilizer</h5>
+                                    <p>Feed with a balanced houseplant fertilizer diluted to half strength once every 2-3 months during growing season (spring and summer). No fertilizer needed in fall and winter.</p>
+                                    
+                                    <h5><i class="bi bi-scissors"></i> Pruning & Propagation</h5>
+                                    <p>Prune as needed to control length and encourage bushier growth. Pothos is extremely easy to propagate - simply cut a stem with at least one node, remove lower leaves, and place in water until roots develop (usually 2-3 weeks).</p>
+                                </div>
+                            </div>
+                            <div class="alert alert-success mt-3">
+                                <i class="bi bi-info-circle"></i> Pro Tip: To keep your Pothos looking full and bushy, periodically trim the vines and replant the cuttings back into the same pot after rooting them in water.
+                            </div>
+                            <div class="alert alert-warning mt-3">
+                                <i class="bi bi-exclamation-triangle"></i> Note: Pothos is toxic to pets if ingested. Keep out of reach of cats, dogs, and small children.
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+                            <div class="reviews">
+                                <div class="d-flex justify-content-between align-items-center mb-4">
+                                    <h4>Customer Reviews (52)</h4>
+                                    <button class="btn btn-success">Write a Review</button>
+                                </div>
+                                
+                                <!-- Review 1 -->
+                                <div class="review mb-4 pb-4 border-bottom">
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <div>
+                                            <h5 class="mb-0">Amanda Parker</h5>
+                                            <div class="ratings">
+                                                <i class="bi bi-star-fill text-warning"></i>
+                                                <i class="bi bi-star-fill text-warning"></i>
+                                                <i class="bi bi-star-fill text-warning"></i>
+                                                <i class="bi bi-star-fill text-warning"></i>
+                                                <i class="bi bi-star-fill text-warning"></i>
+                                            </div>
+                                        </div>
+                                        <span class="text-muted">June 2, 2025</span>
+                                    </div>
+                                    <p>Perfect plant for beginners! I've killed almost every houseplant I've owned, but my Pothos has been thriving for over a year. It's grown so much that I've been able to take cuttings and start new plants for friends. The hanging pot it came in is stylish and sturdy. Highly recommend!</p>
+                                </div>
+                                
+                                <!-- Review 2 -->
+                                <div class="review mb-4 pb-4 border-bottom">
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <div>
+                                            <h5 class="mb-0">Daniel Wright</h5>
+                                            <div class="ratings">
+                                                <i class="bi bi-star-fill text-warning"></i>
+                                                <i class="bi bi-star-fill text-warning"></i>
+                                                <i class="bi bi-star-fill text-warning"></i>
+                                                <i class="bi bi-star-fill text-warning"></i>
+                                                <i class="bi bi-star-fill text-warning"></i>
+                                            </div>
+                                        </div>
+                                        <span class="text-muted">May 18, 2025</span>
+                                    </div>
+                                    <p>I ordered the Marble Queen variety and it's absolutely stunning! The variegation is beautiful and exactly as pictured. The plant arrived in perfect condition and has already grown several inches in just a month. I've placed it on a shelf where the vines can cascade down, and it's become a focal point in my home office.</p>
+                                </div>
+                                
+                                <!-- Review 3 -->
+                                <div class="review">
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <div>
+                                            <h5 class="mb-0">Sophia Martinez</h5>
+                                            <div class="ratings">
+                                                <i class="bi bi-star-fill text-warning"></i>
+                                                <i class="bi bi-star-fill text-warning"></i>
+                                                <i class="bi bi-star-fill text-warning"></i>
+                                                <i class="bi bi-star-fill text-warning"></i>
+                                                <i class="bi bi-star-fill text-warning"></i>
+                                            </div>
+                                        </div>
+                                        <span class="text-muted">April 30, 2025</span>
+                                    </div>
+                                    <p>This is my third Pothos from PlantHaven (I now have Golden, Neon, and Marble Queen) and they're all thriving! The plants are always healthy, well-packaged, and bigger than expected for the price. I love how easy they are to care for and how quickly they grow. The care instructions are very helpful too. Will definitely be ordering more plants soon!</p>
+                                </div>
+                                
+                                <!-- Pagination -->
+                                <nav class="mt-4">
+                                    <ul class="pagination justify-content-center">
+                                        <li class="page-item disabled">
+                                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                                        </li>
+                                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">Next</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Related Products -->
+            <div class="related-products mt-5">
+                <h3 class="mb-4">You May Also Like</h3>
+                <div class="row g-4">
+                    <div class="col-md-3 col-6">
+                        <div class="card product-card h-100">
+                            <img src="Photo\Peace lilly.jpg" class="card-img-top" alt="Philodendron">
+                            <div class="card-body">
+                                <h5 class="card-title">Philodendron</h5>
+                                <p class="card-text text-success fw-bold">$22.99</p>
+                                <div class="d-flex justify-content-between">
+                                    <a href="philodendron-detail.html" class="btn btn-outline-success btn-sm">View</a>
+                                    <button class="btn btn-success btn-sm">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="card product-card h-100">
+                            <img src="Photo\Plant Care.jpg" class="card-img-top" alt="Spider Plant">
+                            <div class="card-body">
+                                <h5 class="card-title">Spider Plant</h5>
+                                <p class="card-text text-success fw-bold">$22.99</p>
+                                <div class="d-flex justify-content-between">
+                                    <a href="spider-plant-detail.html" class="btn btn-outline-success btn-sm">View</a>
+                                    <button class="btn btn-success btn-sm">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="card product-card h-100">
+                            <img src="Photo\Snake plant.jpg" class="card-img-top" alt="Snake Plant">
+                            <div class="card-body">
+                                <h5 class="card-title">Snake Plant</h5>
+                                <p class="card-text text-success fw-bold">$24.99</p>
+                                <div class="d-flex justify-content-between">
+                                    <a href="snake-plant-detail.html" class="btn btn-outline-success btn-sm">View</a>
+                                    <button class="btn btn-success btn-sm">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="card product-card h-100">
+                            <img src="Photo\Photo copy\plant zz.jpg`" class="card-img-top" alt="ZZ Plant">
+                            <div class="card-body">
+                                <h5 class="card-title">ZZ Plant</h5>
+                                <p class="card-text text-success fw-bold">$34.99</p>
+                                <div class="d-flex justify-content-between">
+                                    <a href="zz-plant-detail.html" class="btn btn-outline-success btn-sm">View</a>
+                                    <button class="btn btn-success btn-sm">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-5 bg-success text-white">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <h3>Join Our Newsletter</h3>
+                    <p>Subscribe to receive updates, access to exclusive deals, and more.</p>
+                    <form class="row g-2 justify-content-center">
+                        <div class="col-auto">
+                            <input type="email" class="form-control" placeholder="Enter your email">
+                        </div>
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-light">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>PlantHaven</h5>
+                    <p>Your one-stop shop for all things plants.</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Home</a></li>
+                        <li><a href="products.html" class="text-white">Products</a></li>
+                        <li><a href="about.html" class="text-white">About Us</a></li>
+                        <li><a href="contact.html" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Customer Service</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">FAQ</a></li>
+                        <li><a href="#" class="text-white">Shipping Policy</a></li>
+                        <li><a href="#" class="text-white">Return Policy</a></li>
+                        <li><a href="#" class="text-white">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contact Us</h5>
+                    <address>
+                        <p>123 Green Street<br>Plant City, PC 12345</p>
+                        <p>Email: info@planthaven.com<br>Phone: (123) 456-7890</p>
+                    </address>
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white me-2"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white me-2"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>&copy; 2025 PlantHaven. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

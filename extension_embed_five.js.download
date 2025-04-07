@@ -1,0 +1,68 @@
+const usedIDs = window.IDS;
+
+function isElectronApp() {
+  if (window['electronAPI']) {
+    return true;
+  }
+  return false;
+}
+
+async function getDataFromClient(data) {
+  const { result } = await window['electronAPI'].invokeHandler(data);
+  return result;
+}
+
+async function sendToExtension(data) {
+  let res = await Promise.all(usedIDs.map(id => {
+    return new Promise((resolve) => {
+      // eslint-disable-next-line no-undef
+      chrome.runtime.sendMessage(id, data, undefined, (x) => {
+        resolve(x);
+      });
+    });
+  }));
+
+  return res.find(x => x !== undefined);
+}
+
+window['tokenPromise'] = isElectronApp() ? getDataFromClient({ type: 'get_credentials', data: 'JWT', }) : sendToExtension({ type: 'get_credentials', data: 'JWT', });
+
+const searchParams = new URLSearchParams(window.location.search);
+const appParam = searchParams.get('app');
+const isChatFrame = appParam ? appParam === 'embed' : !window.location.pathname.includes('sidebar');
+if (isChatFrame) {
+  const isPreloaded = searchParams.get('is_preloaded') === 'true';
+  const style = document.createElement('style');
+  style.textContent = `body {
+    background-size: cover;
+  }`;
+  document.head.appendChild(style);
+
+  if (isPreloaded) {
+    let finalResolver = null;
+    function getDataOnce() {
+      return isElectronApp() ? getDataFromClient({ type: 'autowrite', subType: 'embedLoaded', }) : sendToExtension({ type: 'autowrite', subType: 'embedLoaded', });
+    }
+    async function getData() {
+      const data = await getDataOnce();
+      if (data) {
+        return data;
+      }
+      return new Promise(resolve => finalResolver = resolve);
+    }
+    const promise = getData();
+    window['extensionDataPromise'] = promise.then(x => x.data);
+    window['frameDataPromise'] = promise.then(x => x.frame);
+    window['initialDataPromise'] = promise.then(x => x.initial);
+    window.addEventListener('message', (e) => {
+      if (e.data?.type === 'requestData' && finalResolver) {
+        getDataOnce().then(finalResolver);
+      }
+    });
+  } else {
+    window['extensionDataPromise'] = sendToExtension({ type: 'autowrite', subType: 'getAllData' });
+    window['frameDataPromise'] = sendToExtension({ type: 'getActiveFrameData' });
+    window['initialDataPromise'] = sendToExtension({ type: 'autowrite', subType: 'getInitialPrompt' });
+  }
+}
+window['electronAPI']?.sendMsg({ type: 'listeners-attached' });

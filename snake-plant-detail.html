@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlantHaven - Snake Plant</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="animation.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="text-success fw-bold">Plant</span>Haven
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <div class="d-flex ms-3">
+                    <a href="#" class="btn btn-outline-success me-2">
+                        <i class="bi bi-search"></i>
+                    </a>
+                    <a href="#" class="btn btn-outline-success position-relative">
+                        <i class="bi bi-cart"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">
+                            3
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="bg-light py-2">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="products.html">Products</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Snake Plant</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Product Detail Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Product Images -->
+                <div class="col-md-6 mb-4">
+                    <div class="product-images">
+                        <div class="main-image mb-3">
+                            <img src="Photo\Photo copy\Snakes plant.jpg" alt="Snake Plant" class="img-fluid rounded plant-sway">
+                        </div>
+                        <div class="row g-2">
+                            <div class="col-3">
+                                <img src="Photo\Photo copy\Snakes plant.jpg" alt="Snake Plant thumbnail" class="img-fluid rounded thumbnail active">
+                            </div>
+                            <div class="col-3">
+                                <img src="Photo\Photo copy\Snakes plant.jpg" alt="Snake Plant thumbnail" class="img-fluid rounded thumbnail">
+                            </div>
+                            <div class="col-3">
+                                <img src="Photo\Photo copy\Snakes plant.jpg" alt="Snake Plant thumbnail" class="img-fluid rounded thumbnail">
+                            </div>
+                            <div class="col-3">
+                                <img src="Photo\Photo copy\Snakes plant.jpg" alt="Snake Plant thumbnail" class="img-fluid rounded thumbnail">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product Info -->
+                <div class="col-md-6">
+                    <h1 class="mb-2">Snake Plant (Sansevieria)</h1>
+                    <div class="mb-3">
+                        <div class="d-flex align-items-center">
+                            <div class="ratings me-2">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                            </div>
+                            <span>(38 reviews)</span>
+                        </div>
+                    </div>
+                    <h2 class="text-success mb-4">$24.99</h2>
+                    
+                    <p class="mb-4">The Snake Plant, also known as Mother-in-Law's Tongue or Sansevieria, is one of the most low-maintenance houseplants you can grow. With its striking upright leaves and ability to purify air, it's perfect for beginners and busy plant parents.</p>
+                    
+                    <div class="mb-4">
+                        <h5>Size</h5>
+                        <div class="btn-group" role="group">
+                            <input type="radio" class="btn-check" name="size" id="small" autocomplete="off">
+                            <label class="btn btn-outline-success" for="small">Small</label>
+                            
+                            <input type="radio" class="btn-check" name="size" id="medium" autocomplete="off" checked>
+                            <label class="btn btn-outline-success" for="medium">Medium</label>
+                            
+                            <input type="radio" class="btn-check" name="size" id="large" autocomplete="off">
+                            <label class="btn btn-outline-success" for="large">Large</label>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h5>Pot Style</h5>
+                        <div class="btn-group" role="group">
+                            <input type="radio" class="btn-check" name="pot" id="terracotta" autocomplete="off" checked>
+                            <label class="btn btn-outline-success" for="terracotta">Terracotta</label>
+                            
+                            <input type="radio" class="btn-check" name="pot" id="ceramic" autocomplete="off">
+                            <label class="btn btn-outline-success" for="ceramic">Ceramic</label>
+                            
+                            <input type="radio" class="btn-check" name="pot" id="plastic" autocomplete="off">
+                            <label class="btn btn-outline-success" for="plastic">Plastic</label>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="input-group me-3" style="width: 130px;">
+                            <button class="btn btn-outline-secondary" type="button">-</button>
+                            <input type="text" class="form-control text-center" value="1">
+                            <button class="btn btn-outline-secondary" type="button">+</button>
+                        </div>
+                        <button class="btn btn-success btn-lg flex-grow-1">Add to Cart</button>
+                    </div>
+                    
+                    <div class="d-flex mb-4">
+                        <button class="btn btn-outline-secondary me-2">
+                            <i class="bi bi-heart"></i> Add to Wishlist
+                        </button>
+                        <button class="btn btn-outline-secondary">
+                            <i class="bi bi-share"></i> Share
+                        </button>
+                    </div>
+                    
+                    <div class="product-meta">
+                        <p><strong>SKU:</strong> PLANT-SP-002</p>
+                        <p><strong>Categories:</strong> <a href="#">Indoor Plants</a>, <a href="#">Low Maintenance</a></p>
+                        <p><strong>Tags:</strong> <a href="#">Air Purifying</a>, <a href="#">Drought Tolerant</a></p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product Details Tabs -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <ul class="nav nav-tabs" id="productTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="description-tab" data-bs-toggle="tab" data-bs-target="#description" type="button" role="tab" aria-controls="description" aria-selected="true">Description</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="care-tab" data-bs-toggle="tab" data-bs-target="#care" type="button" role="tab" aria-controls="care" aria-selected="false">Care Guide</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews" type="button" role="tab" aria-controls="reviews" aria-selected="false">Reviews (38)</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content p-4 border border-top-0 rounded-bottom" id="productTabsContent">
+                        <div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab">
+                            <h4>About Snake Plant</h4>
+                            <p>The Snake Plant (Sansevieria trifasciata) is a popular houseplant known for its striking, sword-like leaves that grow upright. Native to West Africa, this resilient plant has adapted to survive in harsh conditions, making it one of the most forgiving houseplants available.</p>
+                            <p>Its distinctive appearance features stiff, upright leaves with green banding patterns and yellow borders on some varieties. The plant can grow anywhere from 8 inches to several feet tall, depending on the variety and growing conditions.</p>
+                            <p>Beyond its aesthetic appeal, the Snake Plant is renowned for its air-purifying abilities. NASA's Clean Air Study found that it's one of the best plants for removing toxins like formaldehyde, xylene, and toluene from the air.</p>
+                            <h5>Benefits:</h5>
+                            <ul>
+                                <li>Excellent air purifier, removing toxins and releasing oxygen at night</li>
+                                <li>Extremely drought-tolerant and can survive with minimal watering</li>
+                                <li>Thrives in low light conditions, making it perfect for darker corners</li>
+                                <li>Resistant to most pests and diseases</li>
+                                <li>Perfect for beginners or those who travel frequently</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="care" role="tabpanel" aria-labelledby="care-tab">
+                            <h4>Snake Plant Care Guide</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5><i class="bi bi-brightness-high"></i> Light</h5>
+                                    <p>Tolerates low light but thrives in indirect bright light. Can tolerate some direct sun, but avoid harsh afternoon sunlight.</p>
+                                    
+                                    <h5><i class="bi bi-droplet"></i> Water</h5>
+                                    <p>Allow soil to dry completely between waterings. Water sparingly, especially in winter. Overwatering is the most common cause of problems.</p>
+                                    
+                                    <h5><i class="bi bi-thermometer-half"></i> Temperature</h5>
+                                    <p>Prefers temperatures between 60-85°F (15-29°C). Can tolerate occasional temperature drops but protect from frost.</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5><i class="bi bi-moisture"></i> Humidity</h5>
+                                    <p>Adapts to normal household humidity levels. No special humidity requirements needed.</p>
+                                    
+                                    <h5><i class="bi bi-flower1"></i> Fertilizer</h5>
+                                    <p>Feed with a balanced houseplant fertilizer diluted to half strength once every 2-3 months during growing season (spring and summer).</p>
+                                    
+                                    <h5><i class="bi bi-scissors"></i> Pruning</h5>
+                                    <p>Minimal pruning required. Remove damaged leaves by cutting them off at the base. Can be divided when pot-bound.</p>
+                                </div>
+                            </div>
+                            <div class="alert alert-success mt-3">
+                                <i class="bi bi-info-circle"></i> Pro Tip: Snake plants prefer to be slightly pot-bound, so don't rush to repot them. When you do repot, choose a container just slightly larger than the current one.
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+                            <div class="reviews">
+                                <div class="d-flex justify-content-between align-items-center mb-4">
+                                    <h4>Customer Reviews (38)</h4>
+                                    <button class="btn btn-success">Write a Review</button>
+                                </div>
+                                
+                                <!-- Review 1 -->
+                                <div class="review mb-4 pb-4 border-bottom">
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <div>
+                                            <h5 class="mb-0">Alex Thompson</h5>
+                                            <div class="ratings">
+                                                <i class="bi bi-star-fill text-warning"></i>
+                                                <i class="bi bi-star-fill text-warning"></i>
+                                                <i class="bi bi-star-fill text-warning"></i>
+                                                <i class="bi bi-star-fill text-warning"></i>
+                                                <i class="bi bi-star-fill text-warning"></i>
+                                            </div>
+                                        </div>
+                                        <span class="text-muted">July 3, 2025</span>
+                                    </div>
+                                    <p>Perfect plant for a beginner like me! I've managed to kill almost every plant I've owned, but this snake plant has survived for over a year now. It looks beautiful in my living room and requires almost no maintenance. Highly recommend!</p>
+                                </div>
+                                
+                                <!-- Review 2 -->
+                                <div class="review mb-4 pb-4 border-bottom">
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <div>
+                                            <h5 class="mb-0">Jessica Kim</h5>
+                                            <div class="ratings">
+                                                <i class="bi bi-star-fill text-warning"></i>
+                                                <i class="bi bi-star-fill text-warning"></i>
+                                                <i class="bi bi-star-fill text-warning"></i>
+                                                <i class="bi bi-star-fill text-warning"></i>
+                                                <i class="bi bi-star text-warning"></i>
+                                            </div>
+                                        </div>
+                                        <span class="text-muted">June 15, 2025</span>
+                                    </div>
+                                    <p>The plant arrived in excellent condition and was larger than I expected. It's been thriving in my bedroom with minimal care. The only reason for 4 stars instead of 5 is that the ceramic pot I ordered had a small chip, but the plant itself is perfect.</p>
+                                </div>
+                                
+                                <!-- Review 3 -->
+                                <div class="review">
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <div>
+                                            <h5 class="mb-0">Marcus Williams</h5>
+                                            <div class="ratings">
+                                                <i class="bi bi-star-fill text-warning"></i>
+                                                <i class="bi bi-star-fill text-warning"></i>
+                                                <i class="bi bi-star-fill text-warning"></i>
+                                                <i class="bi bi-star-fill text-warning"></i>
+                                                <i class="bi bi-star-fill text-warning"></i>
+                                            </div>
+                                        </div>
+                                        <span class="text-muted">May 28, 2025</span>
+                                    </div>
+                                    <p>I bought this for my office which has no windows, and it's still thriving after 6 months! The care instructions were very helpful, and I've only had to water it a handful of times. It's also helped improve the air quality in my workspace. Great purchase!</p>
+                                </div>
+                                
+                                <!-- Pagination -->
+                                <nav class="mt-4">
+                                    <ul class="pagination justify-content-center">
+                                        <li class="page-item disabled">
+                                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                                        </li>
+                                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">Next</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Related Products -->
+            <div class="related-products mt-5">
+                <h3 class="mb-4">You May Also Like</h3>
+                <div class="row g-4">
+                    <div class="col-md-3 col-6">
+                        <div class="card product-card h-100">
+                            <img src="Photo\Photo copy\plant zz.jpg" class="card-img-top plant-grow delay-2" alt="ZZ Plant">
+                            <div class="card-body">
+                                <h5 class="card-title">ZZ Plant</h5>
+                                <p class="card-text text-success fw-bold">$34.99</p>
+                                <div class="d-flex justify-content-between">
+                                    <a href="zz-plant-detail.html" class="btn btn-outline-success btn-sm">View</a>
+                                    <button class="btn btn-success btn-sm">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="card product-card h-100">
+                            <img src="Photo\Photo copy\Pothos.jpg" class="card-img-top" alt="Pothos">
+                            <div class="card-body">
+                                <h5 class="card-title">Pothos</h5>
+                                <p class="card-text text-success fw-bold">$19.99</p>
+                                <div class="d-flex justify-content-between">
+                                    <a href="pothos-detail.html" class="btn btn-outline-success btn-sm">View</a>
+                                    <button class="btn btn-success btn-sm">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="card product-card h-100">
+                            <img src="Photo\Photo copy\Alovera.jpg" class="card-img-top" alt="Aloe Vera">
+                            <div class="card-body">
+                                <h5 class="card-title">Aloe Vera</h5>
+                                <p class="card-text text-success fw-bold">$15.99</p>
+                                <div class="d-flex justify-content-between">
+                                    <a href="aloe-vera-detail.html" class="btn btn-outline-success btn-sm">View</a>
+                                    <button class="btn btn-success btn-sm">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="card product-card h-100">
+                            <img src="Photo\Photo copy\Monstera Delicosa - 1.jpg" class="card-img-top" alt="Monstera Deliciosa">
+                            <div class="card-body">
+                                <h5 class="card-title">Monstera Deliciosa</h5>
+                                <p class="card-text text-success fw-bold">$39.99</p>
+                                <div class="d-flex justify-content-between">
+                                    <a href="product-detail.html" class="btn btn-outline-success btn-sm">View</a>
+                                    <button class="btn btn-success btn-sm">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-5 bg-success text-white">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <h3>Join Our Newsletter</h3>
+                    <p>Subscribe to receive updates, access to exclusive deals, and more.</p>
+                    <form class="row g-2 justify-content-center">
+                        <div class="col-auto">
+                            <input type="email" class="form-control" placeholder="Enter your email">
+                        </div>
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-light">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>PlantHaven</h5>
+                    <p>Your one-stop shop for all things plants.</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Home</a></li>
+                        <li><a href="products.html" class="text-white">Products</a></li>
+                        <li><a href="about.html" class="text-white">About Us</a></li>
+                        <li><a href="contact.html" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Customer Service</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">FAQ</a></li>
+                        <li><a href="#" class="text-white">Shipping Policy</a></li>
+                        <li><a href="#" class="text-white">Return Policy</a></li>
+                        <li><a href="#" class="text-white">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contact Us</h5>
+                    <address>
+                        <p>123 Green Street<br>Plant City, PC 12345</p>
+                        <p>Email: info@planthaven.com<br>Phone: (123) 456-7890</p>
+                    </address>
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white me-2"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white me-2"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>&copy; 2025 PlantHaven. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,150 @@
+/* Global Styles */
+:root {
+    --primary-color: #2e7d32;
+    --primary-dark: #1b5e20;
+    --primary-light: #4caf50;
+    --secondary-color: #f5f5f5;
+    --text-color: #333;
+    --light-text: #666;
+    --white: #fff;
+    --border-radius: 0.375rem;
+    --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    --transition: all 0.3s ease;
+  }
+  
+  body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+  
+  a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: var(--transition);
+  }
+  
+  a:hover {
+    color: var(--primary-dark);
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    padding: 5rem 0;
+    background: rgb(194,238,174);
+    background: radial-gradient(circle, rgba(194,238,174,1) 72%, rgba(148,233,180,1) 100%);
+  }
+  
+  /* Category Cards */
+  .category-card {
+    position: relative;
+    text-align: center;
+    transition: var(--transition);
+    padding: 1rem;
+    border-radius: var(--border-radius);
+  }
+  
+  .category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--box-shadow);
+  }
+  
+  /* Product Cards */
+  .product-card {
+    transition: var(--transition);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--box-shadow);
+  }
+  
+  .product-card img {
+    transition: var(--transition);
+    object-fit: cover;
+  }
+  
+  .product-card:hover img {
+    transform: scale(1.05);
+  }
+  
+  /* Benefit Icons */
+  .benefit-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+  }
+  
+  /* Testimonials */
+  .testimonial {
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+  }
+  
+  /* Team Members */
+  .team-member img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 5px solid var(--white);
+    box-shadow: var(--box-shadow);
+  }
+  
+  /* Product Detail Page */
+  .thumbnail {
+    cursor: pointer;
+    opacity: 0.7;
+    transition: var(--transition);
+  }
+  
+  .thumbnail:hover,
+  .thumbnail.active {
+    opacity: 1;
+    border: 2px solid var(--primary-color);
+  }
+  
+  /* Contact Page */
+  .contact-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .map-container {
+    height: 400px;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .hero-section {
+      padding: 3rem 0;
+      text-align: center;
+    }
+  
+    .hero-section img {
+      margin-top: 2rem;
+    }
+  
+    .team-member img {
+      width: 120px;
+      height: 120px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    h1.display-4 {
+      font-size: 2.5rem;
+    }
+  
+    .benefit-icon {
+      font-size: 2rem;
+    }
+  }
+  
+  
